@@ -1,0 +1,13 @@
+# ~/.tmuxinator/toolbox.yml
+# you can make as many tabs as you wish...
+
+project_name: toolbox
+project_root: ~/Repos/toolbox
+windows:
+  - editor: vim
+  - shell: git fetch
+  - console: rails c
+  - server: rails s -p 5999
+  - guard: sleep 1; guard
+  - log: tail -f log/development.log
+

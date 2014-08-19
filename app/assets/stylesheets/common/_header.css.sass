@@ -1,0 +1,79 @@
+#header
+  background: #000
+  color: #fff
+  padding: 10px 0 20px
+
+  .brand
+    margin-top: 2px
+    .name, .subtitle
+      display: inline-block
+    .name
+      color: #fff
+      font-size: 24px
+      margin-right: 9px
+    .subtitle
+      color: #ccc
+      font-size: 16px
+      font-style: italic
+      font-weight: bold
+      padding-top: 4px
+
+  .user
+    padding: 10px 0 0 5px
+    position: relative
+    left: 19px
+
+  .join
+    font-size: 13px
+    padding: 10px 0 0 10px
+    .btn
+      &:first-child
+        margin-left: 4px
+
+  nav
+    margin-top: 13px
+    li
+      float: left
+    a:link, a:visited
+      color: #fff
+      font-size: 18px
+      text-transform: lowercase // ?
+      margin-left: 9px
+
+
+  .phone
+    font-size: 16px
+    margin-top: 15px
+    position: relative
+    left: 20px
+
+@media screen and (max-width: 499px)
+  #header
+    padding: 10px 0
+    .brand
+      float: none !important
+      display: block
+      text-align: center
+      .subtitle
+        font-size: 12px
+    .user, .join
+      display: none
+    nav
+      text-align: center
+      float: none !important
+      margin: 7px auto 0
+      width: 350px
+      li a:link
+        font-size: 15px
+    .phone
+      display: block
+      font-size: 13px
+      float: none !important
+      position: static
+      text-align: center
+      margin-top: 8px
+@media screen and (min-width: 500px)
+  #header
+    .brand
+      .subtitle
+        display: none

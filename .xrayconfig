@@ -1,0 +1,1 @@
+:editor: "/usr/local/bin/tmux send -t toolbox:editor $'\e' :tabe $file ENTER"
