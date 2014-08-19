@@ -233,7 +233,7 @@
 
                 that._clipboard = new ZeroClipboard(buttonEl);
                 that._clipboard.on('copy', function () {
-                    that._clipboard.setText(that.el.value);
+                    that._clipboard.setText(that.val());
                     buttonEl.innerHTML = 'Copied';
                     setTimeout(function () {
                         buttonEl.innerHTML = 'Copy to clipboard';
