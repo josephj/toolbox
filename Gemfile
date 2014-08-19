@@ -32,6 +32,33 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do
+  gem 'guard'
+  gem 'guard-livereload', require: false
+  gem 'rack-livereload'
+  gem 'xray-rails'
+  gem 'awesome_print'
+  gem 'pry-rails'
+  gem 'pry-remote'
+  gem 'pry-stack_explorer'
+  gem 'pry-debugger'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+group :production do
+  gem 'rails_12factor'
+end
+
+gem 'compass-rails', '~> 1.1.2'
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+gem 'mustache-js-rails'
+gem 'lodash-rails'
+gem 'syntax-highlighter-rails'
+gem 'carrierwave'
+gem 'fog'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
